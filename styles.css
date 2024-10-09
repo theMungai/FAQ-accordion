@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 30vh;
+    width: 100%;
+    font-family: 'Work Sans';
+    background: url(/images/background-pattern-desktop.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.FAQ-container{
+    background-color: var(--white);
+    width: 35%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 0.5px solid var(--light-pink);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 8px 30px 0px var(--dark-purple) ;
+}
+
+.header{
+    display: flex;
+    padding-bottom: 30px;
+
+}
+
+.header h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--dark-purple);
+    padding: 0px 20px;
+}
+
+.quiz-section {
+    width: 100%;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    cursor: pointer;
+}
+
+.question h4{
+    color: var(--dark-purple);
+    font-weight: 550;
+    font-size: 1rem;
+}
+
+
+.question img{
+    display: inline;
+    position: relative;
+    right: 2%;
+}
+
+
+.answer{
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    color: var(--grayish-purple);
+    display: none;
+}
+
+#hide-answer1,#hide-answer2,#hide-answer3,#hide-answer4{
+    display: none;
+}
+
+.attribution { 
+    font-size: 12px; 
+    text-align: center;
+    position: relative;
+    top: 90%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* =================Media Queries ====================== */
+/* ==============Mobile Devices ========================= */
+@media (max-width:480px){
+    body{
+        height: 25vh;
+        width: 100%;
+        background: url(/images/background-pattern-mobile.svg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+    
+    
+    .FAQ-container{
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .header{
+        padding-bottom: 20px; 
+    }
+    
+    .header h1{
+        font-size: 2.4rem;
+        padding: 0px 10px;
+    }
+
+    
+    .question{
+        padding: 20px 0px;
+    }
+    
+    .question h4{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* ==============Small Devices ========================= */
+@media (min-width:481px) and (max-width:767px){
+    body{
+        height: 25vh;
+        width: 100%;
+        background: url(/images/background-pattern-mobile.svg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+    
+    
+    .FAQ-container{
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .header{
+        padding-bottom: 20px; 
+    }
+    
+    .header h1{
+        font-size: 2.4rem;
+        padding: 0px 10px;
+    }
+
+    
+    .question{
+        padding: 20px 0px;
+    }
+    
+    .question h4{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+/* ==============Medium Devices ========================= */
+@media (min-width:768px) and (max-width:991px){
+    body{
+        height: 25vh;
+        width: 100%;
+        background: url(/images/background-pattern-mobile.svg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+    
+    
+    .FAQ-container{
+        width: 90%;
+        padding: 40px;
+    }
+    
+    .header{
+        padding-bottom: 20px; 
+    }
+    
+    .header h1{
+        font-size: 2.4rem;
+        padding: 0px 10px;
+    }
+
+    
+    .question{
+        padding: 20px 0px;
+    }
+    
+    .question h4{
+        font-size: 1rem;
+    }
+
+}
