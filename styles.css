@@ -55,10 +55,16 @@ body{
     width: 100%;
 }
 
+.quiz-and-answer{
+    margin-bottom: 30px;
+    border: 2px solid red;
+}
+
 .question{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 30px 0px;
+    
     cursor: pointer;
 }
 
@@ -70,11 +76,14 @@ body{
 
 
 .question img{
-    display: inline;
     position: relative;
     right: 2%;
 }
 
+.hide-icon{
+    display: none;
+    
+}
 
 .answer{
     font-weight: 400;
@@ -84,9 +93,7 @@ body{
     display: none;
 }
 
-#hide-answer1,#hide-answer2,#hide-answer3,#hide-answer4{
-    display: none;
-}
+
 
 .attribution { 
     font-size: 12px; 
