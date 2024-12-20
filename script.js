@@ -103,5 +103,26 @@
 
 
 
-// 19TH DECEMBER 2024
+// 20TH DECEMBER 2024
 
+const questions = document.querySelectorAll(".quiz-and-answer");
+questions.forEach((question) => {
+    question.addEventListener("click", () => {
+        const answer = question.querySelector(".answer");
+        const showIcon = question.querySelector(".show-icon");
+        const hideIcon = question.querySelector(".hide-icon");
+        
+        const isOpen = answer.style.display === "block";
+
+        if(isOpen){
+            answer.style.display = "none";
+            showIcon.style.display = "block";
+            hideIcon.style.display = "none"
+        }
+        else{
+            answer.style.display = "block";
+            hideIcon.style.display = "block";
+            showIcon.style.display = "none"
+        }
+    });
+});
